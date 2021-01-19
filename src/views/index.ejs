@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
 
-  <body>
-    <h1><?= message ?></h1>
-  
-    <?- include('../src/views/containers/test'); ?>
-  </body>
+	<body>
+		<?- include('../src/views/components/header/header.component.ejs'); ?>
+
+		
+		<h1><?= title ?></h1>
+		<h3><?= author ?></h3>
+		<div>
+		<?- article ?>
+		</div>
+	</body>
 </html>

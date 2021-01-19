@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const helmet = require('helmet');
 const xss = require('xss-clean');
 const mongoSanitize = require('express-mongo-sanitize');
@@ -52,6 +53,18 @@ if (config.env === 'production') {
 
 // v1 api routes
 app.use('/v1', routes);
+
+// Set EJS as the view engine
+app.set('views', './src/views')
+app.set('view engine', 'ejs')
+app.set('view options', {delimiter: '?'});
+
+// Static Files
+app.use(express.static('./dist'))
+
+app.get('/', function (req, res) {
+  res.render(path.resolve(__dirname, '../dist/index.ejs'), { title: 'Hey', message: 'Hello there!' })
+})
 
 // send back a 404 error for any unknown api request
 app.use((req, res, next) => {

@@ -4,18 +4,25 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
-
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
 		<title><%= htmlWebpackPlugin.options.title %></title>
 	</head>
 
 	<body>
 		<?- include('../src/views/components/header/header.component.ejs'); ?>
 
-		
-		<h1><?= title ?></h1>
-		<h3><?= author ?></h3>
-		<div>
-		<?- article ?>
-		</div>
+		<main>
+			<?- include('../src/views/components/key/key.component.ejs'); ?>
+			<article>
+				
+				<h1><?= title ?></h1>
+				<h3><?= author ?></h3>
+				<div>
+					<?- article ?>
+				</div>
+			</article>
+		</main>
 	</body>
 </html>

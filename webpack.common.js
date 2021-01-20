@@ -18,7 +18,7 @@ module.exports = {
   // Customize the webpack build process
   plugins: [
     // Removes/cleans build folders and unused assets when rebuilding
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
 
     // Copies files from target to destination folder
     new CopyWebpackPlugin({
@@ -76,7 +76,6 @@ module.exports = {
             options: {
               importLoaders: 2,
               sourceMap: false,
-              modules: true,
             },
           },
           'postcss-loader',

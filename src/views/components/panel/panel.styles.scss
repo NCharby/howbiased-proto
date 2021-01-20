@@ -1,0 +1,18 @@
+.panel {
+    @apply flex;
+    @apply flex-col;
+    @apply rounded-2xl;
+    @apply shadow-md;
+    overflow: hidden;
+
+    .panel__head {
+        @apply p-4;
+        background-color: theme('colors.panel.bg');
+        color: theme('colors.panel.font');
+    }
+
+    .panel__content {
+        @apply px-4;
+        @apply py-6;
+    }
+}

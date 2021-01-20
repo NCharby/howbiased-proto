@@ -1,0 +1,26 @@
+
+.hb-key {
+
+    dt {
+        @apply flex;
+        @apply flex-row;
+        @apply mb-2;
+        font-weight: 500;
+        font-size: theme('fontSize.lg');
+    }
+
+    dd {
+        @apply mb-6;
+        font-size: theme('fontSize.xs');
+    }
+}
+
+.hb-key__icon {
+    @apply rounded-full;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+}

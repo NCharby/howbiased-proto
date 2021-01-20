@@ -1,3 +1,14 @@
-body {
-    background-color: aqua;
+@import './_tailwind';
+
+@import './components/header/header.styles.scss';
+@import './components/panel/panel.styles';
+@import './components/key/key.styles';
+
+body,
+html {
+    font-family: theme('fontFamily.body');
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: theme('fontFamily.display');
 }

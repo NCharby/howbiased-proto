@@ -1,0 +1,14 @@
+
+.hb-header {
+    @apply w-full;
+    @apply flex;
+    @apply flex-row;
+    @apply items-center;
+    @apply justify-center;
+    background-color: theme('colors.header.bg');
+    height: 64px;
+
+    .hb-header__logo {
+        height: 55px;
+    }
+}

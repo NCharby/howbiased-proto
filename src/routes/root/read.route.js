@@ -12,7 +12,7 @@ const router = express.Router()
 
 router.get('/:a', function (req, res, next) {
     const { a } = req.params
-    console.log(req.params)
+    
     try {
         const doc = yaml.load(fs.readFileSync(path.resolve(__dirname, `../../../dist/articles/${a}.yaml`), 'utf8'))
         let article

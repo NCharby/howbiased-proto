@@ -9,6 +9,7 @@
     @apply top-0;
     background-color: theme('colors.header.bg');
     height: 64px;
+    z-index: 1;
 
     .hb-header__logo {
         height: 55px;

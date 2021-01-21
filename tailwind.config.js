@@ -30,12 +30,30 @@ module.exports = {
       },
 
       highlights: {
-        hedged: "#f44336",
-        implicative: "#ff9800",
-        factive: "#4caf50",
-        assertive: "#2196f3",
-        subjective: "#9c27b0",
-        trigger: "#e91e63"
+        hedged: {
+          "100": "rgba(244, 67, 54, 1)",
+          "30": "rgba(244, 67, 54, 0.3)"
+        },
+        implicative: {
+          "100": "rgba(255, 152, 0, 1)",
+          "30": "rgba(255, 152, 0, 0.3)"
+        },
+        factive: {
+          "100": "rgba(76, 175, 80, 1)",
+          "30": "rgba(76, 175, 80, 0.3)"
+        },
+        assertive: {
+          "100": "rgba(33, 150, 243, 1)",
+          "30": "rgba(33, 150, 243, 0.3)"
+        },
+        subjective: {
+          "100": "rgba(156, 39, 176, 1)",
+          "30": "rgba(156, 39, 176, 0.3)"
+        },
+        trigger: {
+          "100": "rgba(233, 30, 99, 1)",
+          "30": "rgba(233, 30, 99, 0.3)"
+        }
       }
     },
     fontFamily: {

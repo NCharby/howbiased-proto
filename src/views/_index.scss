@@ -3,7 +3,7 @@
 @import './components/header/header.styles.scss';
 @import './components/panel/panel.styles';
 @import './components/key/key.styles';
-
+@import './components/mark/mark.styles';
 
 
 @import './containers/main/main.container';
@@ -17,7 +17,7 @@ html {
     font-size: theme('fontSize.base');
 }
 
-h1, h2, h3, h4, h5, h6, .h {
+h1, h2, h3, h4, h5, h6, .head {
     font-family: theme('fontFamily.display');
 }
 

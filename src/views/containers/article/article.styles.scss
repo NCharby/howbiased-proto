@@ -9,12 +9,8 @@
     @apply h-full;
     background-color: theme('colors.aside.bg');
     border-left: 1px solid theme('colors.aside.border');
-    border-right: 1px solid theme('colors.aside.border');
 }
 
-.hb-article__header {
-
-}
 
 .hb-article__source {
     @apply flex;

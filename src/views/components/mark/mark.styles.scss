@@ -1,0 +1,79 @@
+mark {
+    &::before,
+    &::after {
+        clip-path: inset(100%);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    &.h,
+    &.hedged {
+        background-color: theme('colors.highlights.hedged.30');
+        &::before {
+            content: " [highlight hedged content start] ";
+        }
+        &::after {
+          content: " [highlight hedged content end] ";
+        }
+    }
+
+    &.i,
+    &.implicative {
+        background-color: theme('colors.highlights.implicative.30');
+        &::before {
+            content: " [highlight implicative content start] ";
+        }
+        &::after {
+          content: " [highlight implicative content end] ";
+        }
+    }
+
+    &.f,
+    &.factive {
+        background-color: theme('colors.highlights.factive.30');
+        &::before {
+            content: " [highlight factive content start] ";
+        }
+        &::after {
+          content: " [highlight factive content end] ";
+        }
+    }
+
+    &.a,
+    &.assertive {
+        background-color: theme('colors.highlights.assertive.30');
+        &::before {
+            content: " [highlight assertive content start] ";
+        }
+        &::after {
+          content: " [highlight assertive content end] ";
+        }
+    }
+
+    &.s,
+    &.subjective {
+        background-color: theme('colors.highlights.subjective.30');
+        &::before {
+            content: " [highlight subjective content start] ";
+        }
+        &::after {
+          content: " [highlight subjective content end] ";
+        }
+    }
+
+    &.t,
+    &.trigger {
+        background-color: theme('colors.highlights.trigger.30');
+        &::before {
+            content: " [highlight trigger content start] ";
+        }
+        &::after {
+          content: " [highlight trigger content end] ";
+        }
+    }
+}
+

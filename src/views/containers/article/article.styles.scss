@@ -3,12 +3,25 @@
 }
 
 .hb-article__aside {
+    @apply py-8;
     @apply flex;
+    @apply flex-col;
     @apply items-center;
     @apply justify-center;
-    @apply h-full;
     background-color: theme('colors.aside.bg');
-    border-left: 1px solid theme('colors.aside.border');
+
+    @media (min-width: theme('screens.lg')) {
+        & {
+            @apply fixed;
+            @apply top-0;
+            @apply right-0;
+            @apply h-full;
+            @apply py-0;
+            @apply pt-16;
+            width: 35%;
+            border-left: 1px solid theme('colors.aside.border');
+        }
+    }
 }
 
 
@@ -25,8 +38,7 @@
 }
 
 .hb-article__content {
-    @apply mt-10;
-    @apply mr-16;
+    @apply my-10;
 
     .hb-article__section {
         p {

@@ -38,7 +38,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, './db'),
-          to: 'articles',
+          to: 'db',
           globOptions: {
             ignore: ['*.DS_Store'],
           },

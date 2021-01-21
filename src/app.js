@@ -55,9 +55,8 @@ app.options('*', cors());
 app.use('/', routes);
 
 // Set EJS as the view engine
-app.set('views', './src/views')
-app.set('templates', './views/containers')
-app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 app.set('view options', {delimiter: '?'});
 
 // Static Files

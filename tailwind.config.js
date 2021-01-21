@@ -24,6 +24,11 @@ module.exports = {
         bg: "#ECEFF1"
       },
 
+      aside: {
+        bg: "#F8F8F8",
+        border: "#90A4AE"
+      },
+
       highlights: {
         hedged: "#f44336",
         implicative: "#ff9800",
@@ -38,8 +43,8 @@ module.exports = {
       body: ["Roboto", "sans-serif"]
     },
     fontSize: {
-      xs: '14px',
-      sm: '16px',
+      xs: '12px',
+      sm: '14px',
       base: '16px',
       lg: '18px',
       xl: '20px',

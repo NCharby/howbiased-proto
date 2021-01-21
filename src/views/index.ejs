@@ -13,16 +13,8 @@
 	<body>
 		<?- include('../src/views/components/header/header.component.ejs'); ?>
 
-		<main>
-			<?- include('../src/views/components/key/key.component.ejs'); ?>
-			<article>
-				
-				<h1><?= title ?></h1>
-				<h3><?= author ?></h3>
-				<div>
-					<?- article ?>
-				</div>
-			</article>
+		<main class="hb-main container">
+			<?- include('../src/views/containers/article/article.container.ejs', {doc: doc}); ?>
 		</main>
 	</body>
 </html>

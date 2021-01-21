@@ -14,13 +14,14 @@ router.get('/:a', function (req, res, next) {
     const { a } = req.params
     
     try {
-        const doc = yaml.load(fs.readFileSync(path.resolve(__dirname, `../../../dist/articles/${a}.yaml`), 'utf8'))
+        let doc = yaml.load(fs.readFileSync(path.resolve(__dirname, `../../../db/articles/${a}.yaml`), 'utf8'))
         let article
         if(doc.body.format === 'markdown'){
             article = MarkdownIt.render(doc.body.value)
-        }
-        //what other format?
-        res.render(path.resolve(__dirname, '../../../dist/index.ejs'), {title: doc.title, author: doc.author, article})
+        } //what other format?
+        console.log(req.app.get("views"))
+        doc.body.display = article
+        res.render(path.resolve(__dirname, '../../../dist/index.ejs'), {doc})
     } catch (e) {
         console.log(e);
         //404

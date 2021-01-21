@@ -1,6 +1,5 @@
 
 .hb-key {
-
     dt {
         @apply flex;
         @apply flex-row;
@@ -11,7 +10,7 @@
 
     dd {
         @apply mb-6;
-        font-size: theme('fontSize.xs');
+        font-size: theme('fontSize.sm');
     }
 }
 

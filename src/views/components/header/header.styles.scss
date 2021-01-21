@@ -5,6 +5,8 @@
     @apply flex-row;
     @apply items-center;
     @apply justify-center;
+    @apply fixed;
+    @apply top-0;
     background-color: theme('colors.header.bg');
     height: 64px;
 

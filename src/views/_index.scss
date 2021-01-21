@@ -4,11 +4,46 @@
 @import './components/panel/panel.styles';
 @import './components/key/key.styles';
 
+
+
+@import './containers/main/main.container';
+@import './containers/article/article.styles.scss';
+
+
 body,
 html {
+    @apply h-full;
     font-family: theme('fontFamily.body');
+    font-size: theme('fontSize.base');
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .h {
     font-family: theme('fontFamily.display');
+}
+
+.head-1 {
+    @apply mb-5;
+    font-size: theme('fontSize.4xl');
+}
+
+.head-2 {
+    @apply mb-4;
+    font-size: theme('fontSize.3xl');
+}
+
+.head-3 {
+    @apply mb-3;
+    font-size: theme('fontSize.2xl');
+}
+
+.head-4 {
+    @apply mb-2;
+    font-size: theme('fontSize.xl');
+}
+
+.attribution {
+    @apply mb-4;
+    @apply block;
+    color: lighten(#000000, 40%);
+    font-size: theme('fontSize.xs');
 }

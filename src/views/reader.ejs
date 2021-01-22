@@ -14,24 +14,9 @@
 		<?- include('../src/views/components/header/header.component.ejs'); ?>
 
 		<main class="hb-main lg:container">
-
-			<div class="panel mt-12">
-				<div class="panel__head">
-					<h1 class="uppercase text-3xl mb-2">Articles</h1>
-				</div>
-				<div class="panel__content">
-					<ul>
-						<? articles.forEach(function(a){ ?>
-							<li>
-								<a href="is/<?- a ?>">
-									<?- a ?>
-								</a>
-							</li>
-						<? }); ?>
-					</ul>
-				</div>
-			</div>
-			
+			<?- include('../src/views/containers/article/article.container.ejs', {doc: doc}); ?>
 		</main>
+
+		<?- include('../src/views/components/tippy/tippy.component.ejs'); ?>
 	</body>
 </html>

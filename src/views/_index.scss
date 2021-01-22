@@ -47,3 +47,8 @@ h1, h2, h3, h4, h5, h6, .head {
     color: lighten(#000000, 40%);
     font-size: theme('fontSize.xs');
 }
+
+ul, ol {
+    list-style-type: disc;
+    padding-left: 40px;
+}

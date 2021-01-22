@@ -49,9 +49,16 @@ module.exports = {
     
     new HtmlWebpackPlugin({
       title: 'How Biased',
-    //   favicon: path.resolve(__dirname, './public/dist') + '/images/favicon.png',
+      //   favicon: path.resolve(__dirname, './public/dist') + '/images/favicon.png',
       template: path.resolve(__dirname, './src/views') + '/index.ejs', // template file
       filename: 'index.ejs', // output file
+    }),
+
+    new HtmlWebpackPlugin({
+      title: 'How Biased',
+      //   favicon: path.resolve(__dirname, './public/dist') + '/images/favicon.png',
+      template: path.resolve(__dirname, './src/views') + '/reader.ejs', // template file
+      filename: 'reader.ejs', // output file
     }),
   ],
 

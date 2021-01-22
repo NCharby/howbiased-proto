@@ -21,7 +21,7 @@ router.get('/:a', function (req, res, next) {
         } //what other format?
         console.log(req.app.get("views"))
         doc.body.display = article
-        res.render(path.resolve(__dirname, '../../../dist/index.ejs'), {doc})
+        res.render(path.resolve(__dirname, '../../../dist/reader.ejs'), {doc})
     } catch (e) {
         console.log(e);
         //404

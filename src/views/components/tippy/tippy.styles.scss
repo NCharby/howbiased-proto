@@ -1,0 +1,99 @@
+//override tippy defaults
+body {
+    .tippy-box {
+        background: none;
+        border-radius: 0;
+        margin-top: 5px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .tippy-content {
+        padding: 0;
+    }
+
+    .tippy-arrow {
+        width: 20px;
+        height: 20px;
+    }
+
+    .tippy-box[data-placement^=top] > .tippy-arrow:after,
+    .tippy-box[data-placement^=bottom] > .tippy-arrow:after,
+    .tippy-box[data-placement^=left] > .tippy-arrow:after,
+    .tippy-box[data-placement^=right] > .tippy-arrow:after {
+        content: '';
+        position: absolute;
+        transform: rotate(45deg);
+        width: 20px;
+        height: 20px;
+        z-index: -1;
+        top: -10px;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    }
+
+    .tippy-box[data-placement^=top] > .tippy-arrow:before,
+    .tippy-box[data-placement^=bottom] > .tippy-arrow:before,
+    .tippy-box[data-placement^=left] > .tippy-arrow:before,
+    .tippy-box[data-placement^=right] > .tippy-arrow:before {
+        @apply shadow-lg;
+        top: -15px;
+        left: -10px;
+        border-width: 0 20px 20px;
+        border-bottom-color: theme('colors.white')
+    }
+}
+
+
+
+.hb-tippy {
+    @apply grid;
+    @apply grid-cols-12;
+    width: 100%;
+    max-width: 307px;
+    height: 123px;
+    .hb-tippy__icon {
+        @apply col-span-2;
+        @apply h-full;
+        @apply flex;
+        @apply flex-col;
+        @apply items-center;
+        padding-top: 14px;
+        &.h {
+            background-color: theme('colors.highlights.hedged.100')
+        }
+
+        &.i {
+            background-color: theme('colors.highlights.implicative.100')
+        }
+
+        &.f {
+            background-color: theme('colors.highlights.factive.100')
+        }
+
+        &.a {
+            background-color: theme('colors.highlights.assertive.100')
+        }
+
+        &.s {
+            background-color: theme('colors.highlights.subjective.100')
+        }
+
+        &.t {
+            background-color: theme('colors.highlights.trigger.100')
+        }
+
+    }
+
+    .hb-tippy__content {
+        @apply col-span-10;
+        padding: 6px;
+        background-color: theme('colors.white');
+        color: theme('colors.primary');
+        h1 {
+            @apply text-2xl;
+        }
+
+        p {
+            @apply text-sm;
+        }
+    }
+}

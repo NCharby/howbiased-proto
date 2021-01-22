@@ -55,6 +55,7 @@
     "swagger-jsdoc": "4.2.0",
     "swagger-ui-express": "4.1.4",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "tippy.js": "^6.2.7",
     "validator": "^13.0.0",
     "winston": "^3.2.1",
     "xss-clean": "^0.1.1"
